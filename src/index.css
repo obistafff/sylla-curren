@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0b1220;
+  --panel: #0f172a;
+  --cyan: #22d3ee;
+  --cyan-soft: #67e8f9;
+}
+
+body {
+  @apply antialiased;
+}
