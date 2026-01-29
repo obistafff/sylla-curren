@@ -1,9 +1,19 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./layout/Layout";
+import Home from "./pages/Home";
+import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
+
 export default function App() {
   return (
-    <div className="min-h-screen bg-[var(--bg)] text-slate-200 flex items-center justify-center">
-      <h1 className="text-3xl font-semibold text-[var(--cyan)]">
-        Sylla Curren
-      </h1>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/competences" element={<Skills />} />
+          <Route path="/projets" element={<Projects />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
