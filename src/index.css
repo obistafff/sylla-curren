@@ -10,3 +10,21 @@
 body {
   @apply antialiased;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #0b1220; /* fallback solide */
+  color: #fff;
+}
