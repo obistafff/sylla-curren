@@ -1,3 +1,6 @@
+import heroImg from "../assets/sylla-curren-developpeur-fullstack.jpg";
+import aboutImg from "../assets/sylla-curren-web-developpeur.jpg";
+
 export default function Home() {
   return (
     <section className="grid gap-10">
@@ -59,10 +62,13 @@ export default function Home() {
             </div>
           </div>
 
-          {/* VISUEL PLACEHOLDER */}
+          {/* VISUEL HERO */}
           <div className="relative">
-            <div className="aspect-square rounded-2xl border border-white/10 bg-gradient-to-br from-cyan/20 via-transparent to-transparent" />
-            <div className="absolute inset-4 rounded-xl border border-white/10 bg-bg/60 backdrop-blur" />
+            <img
+              src={heroImg}
+              alt="Sylla Curren, développeur web full-stack"
+              className="aspect-square w-full rounded-2xl border border-white/10 object-cover"
+            />
           </div>
         </div>
       </div>
@@ -72,16 +78,16 @@ export default function Home() {
         <div className="rounded-2xl border border-white/10 bg-panel p-5">
           <div className="text-cyan font-semibold">Front moderne</div>
           <p className="mt-2 text-sm text-white/70">
-            Interfaces propres, responsives, composants réutilisables et attention
-            aux détails UI/UX.
+            Interfaces propres, responsives, composants réutilisables et
+            attention aux détails UI/UX.
           </p>
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-panel p-5">
           <div className="text-cyan font-semibold">Back solide</div>
           <p className="mt-2 text-sm text-white/70">
-            APIs REST, authentification, logique métier claire et bases de données
-            bien modélisées.
+            APIs REST, authentification, logique métier claire et bases de
+            données bien modélisées.
           </p>
         </div>
 
@@ -99,9 +105,10 @@ export default function Home() {
         <div className="md:col-span-4 rounded-2xl border border-white/10 bg-panel p-6">
           <h2 className="text-lg font-semibold">À propos</h2>
           <p className="mt-2 text-sm text-white/70">
-            Issu d’un parcours orienté création, je mets aujourd’hui cette sensibilité
-            au service du développement web. Mon objectif : construire des produits
-            clairs, efficaces et maintenables, autant côté interface que côté backend.
+            Issu d’un parcours orienté création, je mets aujourd’hui cette
+            sensibilité au service du développement web. Mon objectif : construire
+            des produits clairs, efficaces et maintenables, autant côté interface
+            que côté backend.
           </p>
 
           <p className="mt-3 text-sm text-white/70">
@@ -117,10 +124,11 @@ export default function Home() {
 
         {/* VISUEL SECONDAIRE */}
         <div className="md:col-span-2 rounded-2xl border border-white/10 bg-panel p-6">
-          <div className="h-full min-h-[220px] rounded-xl border border-white/10 bg-gradient-to-tr from-cyan/10 to-transparent" />
-          <p className="mt-3 text-xs text-white/50">
-            Espace visuel — photo, projet ou illustration à venir.
-          </p>
+          <img
+            src={aboutImg}
+            alt="Sylla Curren, développeur web"
+            className="h-full min-h-[220px] w-full rounded-xl border border-white/10 object-cover"
+          />
         </div>
 
         {/* CONTACT */}
