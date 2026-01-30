@@ -1,19 +1,16 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./layout/Layout";
-import Home from "./pages/Home";
-import Skills from "./pages/Skills";
-import Projects from "./pages/Projects";
+import { Routes, Route, Navigate } from "react-router-dom";
+import Layout from "./layout/Layout.jsx";
+import Home from "./pages/Home.jsx";
+import Projects from "./pages/Projects.jsx";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/competences" element={<Skills />} />
-          <Route path="/projets" element={<Projects />} />
-        </Routes>
-      </Layout>
-    </BrowserRouter>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/projets" element={<Projects />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Route>
+    </Routes>
   );
 }
