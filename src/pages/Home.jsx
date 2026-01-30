@@ -1,5 +1,5 @@
 import heroImg from "../assets/sylla-curren-developpeur-fullstack.jpg";
-import aboutImg from "../assets/sylla-curren-web-developpeur.jpg";
+import aboutImg from "../assets/sylla-curren-web-developpeur.png";
 
 export default function Home() {
   return (
@@ -67,7 +67,7 @@ export default function Home() {
             <img
               src={heroImg}
               alt="Sylla Curren, développeur web full-stack"
-              className="aspect-square w-full rounded-2xl border border-white/10 object-cover"
+              className="aspect-square w-full rounded-2xl border border-white/10 object-cover transition-all duration-300 hover:ring-1 hover:ring-cyan/30 hover:shadow-lg"
             />
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function Home() {
 
       {/* 3 BLOCS VALEUR */}
       <div className="grid gap-4 md:grid-cols-3">
-        <div className="rounded-2xl border border-white/10 bg-panel p-5">
+        <div className="rounded-2xl border border-white/10 bg-panel p-5 transition-transform duration-200 hover:-translate-y-0.5">
           <div className="text-cyan font-semibold">Front moderne</div>
           <p className="mt-2 text-sm text-white/70">
             Interfaces propres, responsives, composants réutilisables et
@@ -83,7 +83,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="rounded-2xl border border-white/10 bg-panel p-5">
+        <div className="rounded-2xl border border-white/10 bg-panel p-5 transition-transform duration-200 hover:-translate-y-0.5">
           <div className="text-cyan font-semibold">Back solide</div>
           <p className="mt-2 text-sm text-white/70">
             APIs REST, authentification, logique métier claire et bases de
@@ -91,7 +91,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="rounded-2xl border border-white/10 bg-panel p-5">
+        <div className="rounded-2xl border border-white/10 bg-panel p-5 transition-transform duration-200 hover:-translate-y-0.5">
           <div className="text-cyan font-semibold">Méthodologie</div>
           <p className="mt-2 text-sm text-white/70">
             Kaizen, Git/GitHub structuré, itérations courtes et code maintenable.
@@ -102,7 +102,7 @@ export default function Home() {
       {/* ABOUT + VISUEL + CONTACT */}
       <div className="grid gap-4 md:grid-cols-6">
         {/* ABOUT */}
-        <div className="md:col-span-4 rounded-2xl border border-white/10 bg-panel p-6">
+        <div className="md:col-span-4 rounded-2xl border border-white/10 bg-panel p-6 transition-transform duration-200 hover:-translate-y-0.5">
           <h2 className="text-lg font-semibold">À propos</h2>
           <p className="mt-2 text-sm text-white/70">
             Issu d’un parcours orienté création, je mets aujourd’hui cette
@@ -123,16 +123,16 @@ export default function Home() {
         </div>
 
         {/* VISUEL SECONDAIRE */}
-        <div className="md:col-span-2 rounded-2xl border border-white/10 bg-panel p-6">
+        <div className="md:col-span-2 rounded-2xl border border-white/10 bg-panel p-6 transition-transform duration-200 hover:-translate-y-0.5">
           <img
             src={aboutImg}
             alt="Sylla Curren, développeur web"
-            className="h-full min-h-[220px] w-full rounded-xl border border-white/10 object-cover"
+            className="h-full min-h-[220px] w-full rounded-xl border border-white/10 object-cover transition-all duration-300 hover:ring-1 hover:ring-cyan/30 hover:shadow-lg"
           />
         </div>
 
         {/* CONTACT */}
-        <div className="md:col-span-6 rounded-2xl border border-white/10 bg-panel p-6">
+        <div className="md:col-span-6 rounded-2xl border border-white/10 bg-panel p-6 transition-transform duration-200 hover:-translate-y-0.5">
           <h2 className="text-lg font-semibold">Contact</h2>
           <p className="mt-2 text-sm text-white/70">
             Ouvert aux opportunités junior ou missions. Le plus simple pour me joindre :

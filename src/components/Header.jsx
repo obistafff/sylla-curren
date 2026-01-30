@@ -7,7 +7,7 @@ const idle = "text-white/70 hover:text-white hover:border-white/10";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-bg/80 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-bg/70 backdrop-blur-md">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
         {/* LOGO / IDENTITÉ */}
         <div className="flex items-center gap-3">
