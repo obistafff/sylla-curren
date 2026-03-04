@@ -135,7 +135,7 @@ export default function Home() {
         <div className="md:col-span-6 rounded-2xl border border-white/10 bg-panel p-6 transition-transform duration-200 hover:-translate-y-0.5">
           <h2 className="text-lg font-semibold">Contact</h2>
           <p className="mt-2 text-sm text-white/70">
-            Ouvert aux opportunités junior ou missions. Le plus simple pour me joindre :
+            A la recherche d'un stage pour terminer ma formation au titre de developpeur web fullstack. Le plus simple pour me joindre :
           </p>
 
           <div className="mt-4 flex flex-col gap-3 sm:flex-row">

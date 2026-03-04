@@ -17,7 +17,7 @@ export default function Projects() {
           <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
             <div>
               <h2 className="text-xl font-semibold">
-                NovaKa <span className="text-cyan">/ Nokava</span>
+                Novaka <span className="text-cyan"></span>
               </h2>
 
               <p className="mt-2 max-w-xl text-sm text-white/70">
@@ -63,7 +63,7 @@ export default function Projects() {
 
               <a
                 className="rounded-xl border border-white/10 px-4 py-2 text-sm hover:border-white/20"
-                href="https://github.com/"
+                href="https://github.com/obistafff/novaka/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -83,12 +83,12 @@ export default function Projects() {
               <h2 className="text-xl font-semibold">Studio Lumoria</h2>
 
               <p className="mt-2 max-w-xl text-sm text-white/70">
-                Site vitrine pour un studio photo. Travail orienté design,
+                Site vitrine démo pour un studio photo. Travail orienté design,
                 identité visuelle et expérience utilisateur.
               </p>
 
               <div className="mt-4 flex flex-wrap gap-2 text-xs text-white/60">
-                {["React", "Vite", "Tailwind", "Design UI"].map((tech) => (
+                {["React", "Vite", "Design UI"].map((tech) => (
                   <span
                     key={tech}
                     className="rounded-full border border-white/10 px-3 py-1"
@@ -97,21 +97,23 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-
-              <p className="mt-4 text-xs text-white/50">
-                Statut : refonte prévue / mise en ligne ultérieure
-              </p>
             </div>
 
             <div className="flex shrink-0 gap-3">
-              <span className="rounded-xl border border-white/10 px-4 py-2 text-sm text-white/50">
-                Bientôt en ligne
-              </span>
+              <a
+                className="rounded-xl bg-cyan px-4 py-2 text-bg text-sm font-semibold hover:opacity-90"
+                href="https://lumoria.allyswebdesign.fr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Voir le site
+              </a>
 
               <a
                 className="rounded-xl border border-white/10 px-4 py-2 text-sm hover:border-white/20"
-                href="#"
-                onClick={(e) => e.preventDefault()}
+                href="https://github.com/obistafff/lumoria/"
+                target="_blank"
+                rel="noreferrer"
               >
                 Code
               </a>
